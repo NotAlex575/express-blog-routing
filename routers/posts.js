@@ -21,4 +21,9 @@ router.put("/:id", (req,res) => {
     res.send(`Modifica del post con id ${req.params.id}`);
 })
 
+//delete
+router.delete("/:id", (req,res) => {
+    res.send(`Eliminazione del post con id ${req.params.id}`)
+})
+
 module.exports = router;
