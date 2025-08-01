@@ -3,7 +3,7 @@ const router = express.Router();
 
 //index
 router.get("/", (req, res) => {
-    res.send("Elenco dei posts")
+    res.send("Elenco dei posts");
 })
 
 //show
@@ -13,7 +13,12 @@ router.get("/:id", (req, res) => {
 
 //create
 router.post("/", (req,res) => {
-    res.send("Creazione di un nuovo post")
+    res.send("Creazione di un nuovo post");
+})
+
+//update
+router.put("/:id", (req,res) => {
+    res.send(`Modifica del post con id ${req.params.id}`);
 })
 
 module.exports = router;
